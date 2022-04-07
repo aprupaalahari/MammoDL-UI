@@ -1,38 +1,211 @@
-.App {
-  text-align: center;
+body {
+  color: #09202a;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+hr {
+  background-color: #c6f2ff;
+}
+/* nav bar */
+.nav-blue {
+  background-color: #D3E7FF;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.my-nav .navbar-brand {
+  font-size: 2rem !important;
+  width: 100vw;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.my-nav {
+  font-size: 1.3rem !important;
+}
+
+.marginTop {
+  margin-top: 2rem;
+}
+
+/** for all pages **/
+.page {
+  padding: 1rem;
+}
+
+.centeredPage {
   display: flex;
   flex-direction: column;
   align-items: center;
+}
+/** forms **/
+.form {
+  padding: 1rem;
+  width: 30%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 1rem;
+}
+
+.logoHeader {
+  width: 100vw;
+  background-color: #D3E7FF;
+  display: flex;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+}
+
+.formButtonRow {
+  justify-content: space-around;
+}
+
+.formDropdown > button {
+  background-color: rgba(255, 255, 255, 0.75);
+  border-color: rgba(255, 255, 255, 0.75);
+  color: black;
+  width: 100%;
+}
+
+.formDropdown > button:hover {
+  background-color: #233F87;
+  border-color: #233F87;
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.formDropdown > button:focus {
+  background-color: #233F87;
+  border-color: #233F87;
+  color: white;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.formDropdown > .dropdown-menu > .dropdown-item:active {
+  background-color: #233F87;
+  border-color: #233F87;
+  color: white;
+}
+
+.formDropdown > #dropdown-basic-button {
+  background-color: #233F87;
+  border-color: #233F87;
+  color: white;
+}
+
+.formInputIcon {
+  background-color: #233F87;
+  border-color: #233F87;
+}
+
+.formInput {
+  background-color: rgba(35, 63, 135, 0.6);
+  border-color: rgba(35, 63, 135, 0.6);
+  color: white;
+}
+
+.formInput:focus {
+  background-color: rgba(35, 63, 135, 0.6);
+  border-color: rgba(35, 63, 135, 0.6);
+  color: white;
+}
+
+.formInput::placeholder {
+  color: white;
+}
+
+.formCheckbox > input {
+  background-color: black;
+  border-color: black;
+}
+
+.formCheckbox > input:checked {
+  background-color: black;
+  border-color: black;
+  color: white;
+}
+
+
+
+.coloredForm {
+  background-color: #D3E7FF;
+  border-radius: 15px;
+}
+
+.colored {
+  background-color: #D3E7FF;
+}
+
+.coloredFormWhite {
+  background-color: #ffffff;
+  border-radius: 15px;
+}
+
+/* my account page */
+.row {
+  display: flex;
+  flex-wrap: nowrap;
+}
+
+/* home page */
+
+.resultsList {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  align-content: flex-start;
+  justify-content: start;
+}
+
+.resultsList > .card > .card-header {
+  background-color: white;
+  border: none;
+  font-size: 1em;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 1em;
+  padding-right: 1em;
+}
+
+.resultsList > .card > .card-body {
+  font-size: 1em;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+
+}
+
+.resultsList > .card > .card-header > p {
+  font-size: 0.5em;
+  float: right;
+  margin: 0;
+}
+
+.carouselColumn {
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.carouselColumn > .carousel {
+  border-radius: 20px;
+}
+.carouselColumn > .carousel > .carousel-inner > .carousel-item {
+  border-radius: 20px;
+}
+.carouselColumn > .carousel > .carousel-inner > .carousel-item > img {
+  border-radius: 20px;
+}
+
+.percentDensity {
+  width: 90%;
+  border-radius: 20px;
+  background-color: #5B91D166;
+  margin-bottom: -66%; 
+}
+
+.densityButton:disabled {
+  color: white;
+  opacity: 100;
+  background-color: #EE0D0D7D;
+  border-color:#C86B7F;
+  border-radius: 20px;
+  border-width: medium;
+  font-weight: 900;
+  ;
 }
